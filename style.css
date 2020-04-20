@@ -1,0 +1,253 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*ESTRUTURA*/
+#container{
+    width: 1024px;
+    margin: 20px auto;
+}
+
+/*MENU*/
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    margin-top: 20px;    
+}
+.menu ul li{
+    padding-left: 20px;
+}
+.menu ul li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: unset;
+    background-color: #0a9c96;
+    border-radius: 5px;
+    padding: 10px;
+    color:#fff;
+    font-size: 12px;
+}
+.menu ul li a:hover{
+    background-color: #116175;
+}
+
+/*HOME - BLOCO INICIAL*/
+#inicio{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagemSobre img{
+    width: 100%;
+}
+
+.imagemSobre{
+    width: 60%;
+}
+.sobre{
+    width: 40%;
+    margin-top: 120px;
+}
+.sobre h1{
+    font-family: 'Crete Round', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #116175;
+}
+.sobre p{
+    font-size: 18px;
+    color: #333;
+}
+
+/*HOME LISTAGEM NOTICIAS*/
+#news{
+    margin-top: 60px;
+}
+
+#news h2, #sobrePagina h2, #maisPagina h2{
+    text-align: center;
+    color: #0a9c96;
+    font-size: 40px;
+    font-family: 'Crete Round', serif;
+    margin-bottom: 40px;
+}
+
+.listagem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.noticiasItem{
+    width: 28%;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    margin: 15px;
+}
+
+.noticiasItem img{
+    width: 100%;
+}
+
+.noticiasItem h3{
+    font-weight: bold;
+    font-size: 18px;
+    color: #116175;
+}
+.noticiasItem p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.noticiasItem a.botao{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: unset;
+    background-color: #0a9c96;
+    border-radius: 5px;
+    padding: 10px;
+    color:#fff;
+    font-size: 12px;
+    display: block;
+    text-align: center;    
+}
+.noticiasItem a.botao:hover{
+    background-color: #116175;
+}
+
+.noticiasItem p.data{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: #666;
+}
+
+/*RODAPE*/
+
+#footer{
+    margin-top: 40px;
+    border-top: 2px solid #116175;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#footer img{
+    height: 40px;
+}
+
+#footer p{
+    font-size: bold;
+    margin-top: 5px;
+}
+
+.autor{
+    display: flex;
+}
+
+.autor svg{
+    margin-left: 10px;
+}
+
+/*PÁGINA DE SOBRE*/
+
+#sobrePagina p{
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    margin: 0px  auto 25px;
+}
+
+.linkedin{
+    display: flex;
+    margin: 0 auto;
+    width: 340px;
+    background-color: #116175;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.linkedin span{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+.linkedin svg{
+    fill: #fff;
+    margin-right: 10px;
+}
+.linkedin a{
+    color: #fff;
+    text-decoration: unset;
+}
+.linkedin:hover{
+    background-color: #0a9c96;
+}
+
+/* PAGINA DE FONTES */
+
+.fontes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fontes a{
+    width: 30%;
+}
+
+/*CONTATO*/
+
+.contatoPagina{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}

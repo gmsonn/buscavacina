@@ -246,8 +246,8 @@ table {
 
 /*CONTATO*/
 
-.contatoPagina{
-    width: 80%;
+#contatoPagina{
+    width: 640px;
     margin: 20px auto;
-    text-align: center;
 }
+
